@@ -1,0 +1,36 @@
+/* CSS Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar basic CSS */
+nav {
+    background-color: #031329;
+    font-family: 'Public sans', sans-serif;
+    font-weight: 400;
+    height: 60px;
+    width: 100%;
+    display: flex;
+}
+
+/* CSS of nav links */
+nav a {
+    display: flex;
+    color: #E6E6E6;
+    align-items: center;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+/* CSS of logo placeholder */
+#nav-logo {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    color: #031329;
+    background-color: #E6E6E6;
+    width: 148px;
+    height: 60px;
+}
