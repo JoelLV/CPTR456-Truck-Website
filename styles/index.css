@@ -2,3 +2,39 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.title-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../sources/2019_Top_Five_Class_5-Mack.jpg.optimal.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 426px;
+}
+
+.title-text {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    font-family: 'Public sans', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+#title-main-text {
+    font-size: 72px;
+}
+
+#title-moto {
+    font-size: 50px;
+}
