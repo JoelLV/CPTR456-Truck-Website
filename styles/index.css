@@ -38,7 +38,7 @@ h1, h3, p {
     color: #FFFFFF;
 }
 
-.package-title {
+.package-title-container {
     display: flex;
     align-items: center;
     justify-content: center;
