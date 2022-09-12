@@ -5,47 +5,49 @@ priceConverterBtn.addEventListener("click", () => {
     const packageTitleElem = document.getElementById("package-title")
     const truckBoxElem     = document.getElementsByClassName("truck-package")
 
-    // The following two constant variables
-    // represent the text that will change
+    // The following constant variable
+    // represents the text that will change
     // dynamically when the button is clicked.
-    const innerElementsPerBoxForEnterprice = [
-        {
-            truck:"12", 
-            baseFee:"$30 / truck",
-            mileFee:"$0.50 / mile"
-        },
-        {
-            truck:"18",
-            baseFee:"$40 / truck",
-            mileFee:"$0.70 / mile",
-        },
-        {
-            truck:"24",
-            baseFee:"$70 / truck",
-            mileFee:"$0.80 / mile",
-        }
-    ]
-    const innerElementsPerBoxForStandard = [
-        {
-            truck:"12",
-            baseFee:"$50",
-            mileFee:"$0.60 / mile",
-        },
-        {
-            truck:"18",
-            baseFee:"$65",
-            mileFee:"$0.80 / mile",
-        },
-        {
-            truck:"24",
-            baseFee:"$90",
-            mileFee:"$0.90 / mile",
-        }
-    ]
+    const truckPackageData = {
+        enterprice : [
+            {
+                truck:"12", 
+                baseFee:"$30 / truck",
+                mileFee:"$0.50 / mile"
+            },
+            {
+                truck:"18",
+                baseFee:"$40 / truck",
+                mileFee:"$0.70 / mile",
+            },
+            {
+                truck:"24",
+                baseFee:"$70 / truck",
+                mileFee:"$0.80 / mile",
+            }
+        ],
+        standard : [
+            {
+                truck:"12",
+                baseFee:"$50",
+                mileFee:"$0.60 / mile",
+            },
+            {
+                truck:"18",
+                baseFee:"$65",
+                mileFee:"$0.80 / mile",
+            },
+            {
+                truck:"24",
+                baseFee:"$90",
+                mileFee:"$0.90 / mile",
+            }
+        ]
+    }
 
     const buttonTxt = converterBtn.innerHTML
     // Get constant array according to the current state of the button.
-    const innerElementsToChange = (buttonTxt === "Get Enterprice Price" ? innerElementsPerBoxForEnterprice : innerElementsPerBoxForStandard)
+    const innerElementsToChange = (buttonTxt === "Get Enterprice Price" ? truckPackageData.enterprice : truckPackageData.standard)
     // Iterate through each truck package box and change its values using innerElementsToChange. The array was ordered
     // in such a way that the index of truckBoxElem would match the index of innerElementsToChange.
     for (let i = 0; i < truckBoxElem.length; i++) {
