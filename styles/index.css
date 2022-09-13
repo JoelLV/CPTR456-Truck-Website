@@ -1,14 +1,111 @@
+/* CSS Reset */
 html, body {
     margin: 0;
     padding: 0;
     font-family: 'Public sans', sans-serif;
 }
 
+/* Set margin and padding of text tags used to 0*/
 h1, h3, p {
     margin: 0;
     padding: 0;
 }
 
+/* Mobile View */
+@media (max-width: 800px) {
+    .title-img {
+        height: 200px;
+    }
+
+    .title-img h1 {
+        font-size: 35px;
+    }
+
+    .title-img h3 {
+        font-size: 20px;
+    }
+
+    .truck-package-container {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .truck-package {
+        height: 150px;
+        width: 100%;
+    }
+
+    .package-price-converter button {
+        font-size: 25px;
+        width: 230px;
+    }
+    
+    .truck-package h2 {
+        font-size: 30px;
+        margin-top: 0;
+    }
+    
+    .truck-package p {
+        font-size: 20px;
+    }
+}
+
+/* Added to accomodate better the truck package boxes */
+@media (min-width: 801px) and (max-width: 1040px) {
+    .truck-package-container {
+        margin-right: 50px;
+        margin-left: 50px;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+/* Added to accomodate better the truck package boxes */
+@media (min-width: 1041px) {
+    .truck-package-container {
+        margin-right: 50px;
+        margin-left: 50px;
+        gap: 80px;
+        margin-bottom: 50px;
+    }
+}
+
+/* Standard Desktop view */
+@media (min-width: 801px) {
+    .title-img {
+        height: 426px;
+    }
+
+    .title-img h1 {
+        font-size: 60px;
+    }
+
+    .title-img h3 {
+        font-size: 40px;
+    }
+    
+    .package-price-converter button {
+        font-size: 30px;
+        width: 267px;
+    }
+    
+    .truck-package {
+        width: 300px;
+        padding: 20px;
+        padding-bottom: 50px;
+    }
+
+    .truck-package h2 {
+        font-size: 40px;
+    }
+    
+    .truck-package p {
+        font-size: 20px;
+    }
+}
+
+/* Attributes that do not change regardless of width */
 .title-img {
     display: flex;
     align-items: center;
@@ -18,15 +115,12 @@ h1, h3, p {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 426px;
 }
 
-.title-img h1 {
-    font-size: 60px;
-}
-
-.title-img h3 {
-    font-size: 40px;
+.truck-package-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .title-text {
@@ -48,35 +142,14 @@ h1, h3, p {
     font-size: 20px;
 }
 
-.truck-package-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 50px;
-    margin-left: 50px;
-    gap: 150px;
-}
-
 .truck-package {
     display: flex;
     flex-direction: column;
     background-color: #BA745F;
     color: #FFFFFF;
     height: 150px;
-    width: 300px;
-    padding: 20px;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
     align-items: center;
-}
-
-.truck-package h2 {
-    font-size: 40px;
-    font-weight: 100;
-}
-
-.truck-package p {
-    font-size: 20px;
+    justify-content: center;
 }
 
 .package-price-converter {
@@ -87,10 +160,8 @@ h1, h3, p {
 
 .package-price-converter button {
     text-align: center;
-    font-size: 30px;
     color: #FFFFFF;
     background-color: #031329;
-    width: 267px;
     height: 86px;
     margin-bottom: 20px;
     cursor: pointer;
