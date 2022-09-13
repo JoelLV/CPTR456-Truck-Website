@@ -1,3 +1,15 @@
+@media (min-width: 641px) {
+    .standard-footer-bar a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 640px) {
+    .standard-footer-bar a {
+        font-size: 14px;
+    }
+}
+
 /* Navigation bar basic CSS */
 .standard-footer-bar {
     background-color: #031329;

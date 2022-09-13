@@ -1,3 +1,36 @@
+/* Change font-size and logo size for desktop screens */
+@media (min-width: 641px) {
+    .standard-nav-bar a {
+        font-size: 18px;
+    }
+
+    #nav-logo {
+        width: 150px;
+    }
+}
+
+/* Change font-size and logo size for medium screens */
+@media (max-width: 640px) and (min-width: 380px) {
+    .standard-nav-bar a {
+        font-size: 14px;
+    }
+
+    #nav-logo {
+        width: 90px;
+    }
+}
+
+/* Change font-size and logo size for tiny screens */
+@media (max-width: 379px) {
+    .standard-nav-bar a {
+        font-size: 10px;
+    }
+
+    #nav-logo {
+        width: 70px;
+    }
+}
+
 /* Navigation bar basic CSS */
 .standard-nav-bar {
     background-color: #031329;
@@ -7,6 +40,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 /* CSS of nav links */
@@ -25,6 +59,5 @@
     justify-content: center;
     color: #031329;
     background-color: #E6E6E6;
-    width: 148px;
     height: 60px;
 }
