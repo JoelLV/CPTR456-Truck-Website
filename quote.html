@@ -1,5 +1,121 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
-    <body></body>
+    <head>
+        <meta charset="UTC-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/_navBar.css" />
+        <link rel="stylesheet" href="styles/_footerBar.css" />
+        <link rel="stylesheet" href="styles/quote.css" />
+        <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Public Sans'>
+        <title>Get Quote Page</title>
+    </head>
+    <body>
+
+        <!-- Navigation bar section -->
+        <header>
+            <nav class="standard-nav-bar">
+                <div id="nav-logo">Logo</div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="quote.html">Get a Quote</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        <!-- End navigation bar section -->
+
+        <!-- Main body section -->
+        <main>
+            <section class="quote-container">
+                <div class="quote-header-container">
+                    <div class="quote-main-title">Get a Quote</div>
+                    <div class="change-price-btn-container">
+                        <div class="fine-print-text" id="mobile-fine-print-text">
+                            <small>
+                                Please note that in order for enterprice exclusive prices to apply,
+                                the customer must select a minimum of three trucks for the desired package.
+                            </small>
+                        </div>
+                        <button id="change-price-btn">Get Enterprice Price</button>
+                    </div>
+                </div>
+                <div class="fine-print-text" id="desktop-fine-print-text">
+                    <small>
+                        Please note that in order for enterprice exclusive prices to apply,
+                        the customer must select a minimum of three trucks for the desired package.
+                    </small>
+                </div>
+                <div class="quote-main-container">
+                    <div class="truck-package-title">
+                        <h1>Truck Packages Available</h1>
+                    </div>
+                    <div class="truck-package-container">
+                        <div class="truck-package">
+                            <div class="truck-package-input">
+                                <input type="checkbox" class="checkbox-input" />
+                                <input type="number" class="number-input" min="0" disabled />
+                            </div>
+                            <div class="truck-package-prices">
+                                <h2>12' Truck</h2>
+                                <p>Base Fee: $50</p>
+                                <p>$0.60 / Mile</p>
+                            </div>
+                        </div>
+                        <div class="truck-package">
+                            <div class="truck-package-input">
+                                <input type="checkbox" class="checkbox-input" />
+                                <input type="number" class="number-input" min="0" disabled/>
+                            </div>
+                            <div class="truck-package-prices">
+                                <h2>18' Truck</h2>
+                                <p>Base Fee: $65</p>
+                                <p>$0.80 / Mile</p>
+                            </div>
+                        </div>
+                        <div class="truck-package">
+                            <div class="truck-package-input">
+                                <input type="checkbox" class="checkbox-input" />
+                                <input type="number" class="number-input" min="0" disabled />
+                            </div>
+                            <div class="truck-package-prices">
+                                <h2>24' Truck</h2>
+                                <p>Base Fee: $90</p>
+                                <p>$0.90 / Mile</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="manpower-title">
+                        <h1>Additional Manpower Assistance</h1>
+                    </div>
+                    <div class="manpower-info-container">
+                        <div class="manpower-info-header">
+                            <h2>Charge: $70 / hour / worker</h2>
+                        </div>
+                        <div class="manpower-info-form">
+                            <p>Hours</p><input type="number" min="0" />
+                        </div>
+                        <div class="manpower-info-form">
+                            <p>Workers</p><input type="number" min="0" />
+                        </div>
+                    </div>
+                    <div class="total-price-container">
+                        <p>Total:</p>
+                        <div>
+                            <input id="price-label" type="text" value="$0.00" disabled />
+                            <button id="submit-order">Order</button>
+                        </div>
+                        <small>Mileage fee not included</small>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- End of Main body section-->
+
+        <!-- Footer Section-->
+        <footer class="standard-footer-bar">
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+        </footer>
+        <!-- End footer section -->
+    </body>
 </html>
