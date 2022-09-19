@@ -100,6 +100,7 @@ input {
     .truck-package-input {
         width: 100px;
         grid-area: one;
+        margin-top: -50px; /* Find more elegant way to shove input to the top of the box */
     }
 
     .truck-package-prices {
