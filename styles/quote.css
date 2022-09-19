@@ -367,3 +367,16 @@ input {
     border-radius: 45px;
     cursor: pointer;
 }
+
+#contact-us-btn {
+    display: none;  /* Disable contact-us btn as default */
+    background: #031329;
+    color: #FFFFFF;
+    border-radius: 45px;
+    cursor: pointer;
+    font-size: 30px;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+}
