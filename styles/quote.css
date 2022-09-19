@@ -9,7 +9,22 @@ input {
     color:#031329;
 }
 
-@media (max-width: 800px) {
+/* Shortens gap of truck package boxes as screen shrinks */
+@media (max-width: 1000px) and (min-width: 830px) {
+    .truck-package-container {
+        gap: 20px;
+    }
+}
+
+/* Full desktop gap between truck package boxes */
+@media (min-width: 1000px) {
+    .truck-package-container {
+        gap: 100px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 830px) {
     .quote-container {
         display: flex;
         flex-direction: column;
@@ -52,10 +67,68 @@ input {
     #desktop-fine-print-text {
         display: none;
     }
+
+    .truck-package-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .quote-main-container {
+        width: 100%;
+    }
+
+    .truck-package {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-areas:
+            'one two three'
+            'four five six'
+            'seven eight nine';
+        height: 90px;
+    }
+
+    .truck-package h2 {
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .truck-package p {
+        font-size: 12px;
+    }
+
+    .truck-package-input {
+        width: 100px;
+        grid-area: one;
+    }
+
+    .truck-package-prices {
+        grid-area: two;
+        margin-top: 10px;
+    }
+
+    .manpower-info-container {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    
+    .manpower-info-form {
+        width: 100%;
+    }
+    
+    .manpower-info-form input {
+        margin: 20px;
+        margin-left: auto;
+    }
+
+    .manpower-info-form p {
+        margin: 20px;
+    }
 }
 
 /* Increase font size and title width in desktop view. */
-@media (min-width: 801px) {
+@media (min-width: 830px) {
     .quote-main-title {
         width: 500px;
         height: 100px;
@@ -82,8 +155,51 @@ input {
         height: 82px;
         font-size: 30px;
     }
+
+    .truck-package-container {
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .truck-package {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .truck-package-prices {
+        padding: 20px;
+    }
+
+    .truck-package h2 {
+        margin-bottom: 30px;
+        margin-top: 0;
+        font-size: 30px;
+    }
+    
+    .truck-package p {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .manpower-info-container {
+        width: 250px;
+        padding: 30px;
+    }
+
+    .manpower-title {
+        width: 100%;
+    }
+
+    .manpower-info-form {
+        width: 100%;
+        gap: 40px;
+    }
 }
 
+/* Styles that do not depend on viewport width */
 .quote-header-container {
     display: flex;
     width: 100%;
@@ -135,31 +251,18 @@ input {
 
 .truck-package-container {
     display: flex;
-    flex-direction: row;
-    gap: 100px;
+    width: 100%;
 }
 
 .truck-package {
-    display: flex;
     background-color: #BA745F;
     font-family: 'Public Sans', sans-serif;
     color: #FFFFFF;
-    width: 250px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 10px;
-}
-
-.truck-package h2 {
-    margin-bottom: 30px;
-    margin-top: 0;
-    font-size: 30px;
 }
 
 .truck-package p {
     margin: 0;
-    font-size: 20px;
 }
 
 .truck-package-input {
@@ -189,13 +292,11 @@ input {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
 }
 
 .manpower-title {
     color: #031329;
     font-family: 'Public Sans', sans-serif;
-    width: 100%;
     font-size: 25px;
     text-align: center;
 }
@@ -205,11 +306,9 @@ input {
     background-color: #BA745F;
     font-family: 'Public Sans', sans-serif;
     color: #FFFFFF;
-    width: 250px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px;
 }
 
 .manpower-info-header {
@@ -220,8 +319,6 @@ input {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
-    gap: 40px;
     height: 40px;
 }
 
