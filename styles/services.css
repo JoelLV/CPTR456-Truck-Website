@@ -1,8 +1,110 @@
-html, body {
-    margin: 0;
-    padding: 0;
+@media (max-width: 830px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .services-container {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .service-container {
+        width: 350px;
+        height: 225px;
+        gap: 80px;
+    }
+
+    .service-title {
+        width: 100%;
+    }
+
+    .truck-service-title {
+        font-size: 20px;
+    }
+    
+    .manpower-service-title {
+        font-size: 18px;
+    }
+
+    .get-quote-btn {
+        font-size: 15px;
+        width: 120px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 830px) {
+    .service-container {
+        width: 450px;
+        height: 425px;
+        gap: 200px;
+    }
+
+    .truck-service-title {
+        font-size: 35px;
+    }
+    
+    .manpower-service-title {
+        font-size: 30px;
+    }
+
+    .services-container {
+        height: 70vh;
+        gap: 100px;
+    }
+
+    .get-quote-btn {
+        font-size: 30px;
+        width: 250px;
+        height: 86px;
+    }
 }
 
 section {
     margin: 20px;
+}
+
+.service-container {
+    justify-content: center;
+}
+
+.service-title {
+    text-align: center;
+    background-color: #D8B2A7;
+    mix-blend-mode: lighten;
+    color: #FFFFFF;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.truck-service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("../sources/TuSimple_Self_Drving_Truck_4_copy.0.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 42px;
+}
+
+.manpower-service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("../sources/PTL-when.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 42px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
