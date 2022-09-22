@@ -3,9 +3,8 @@
     <head>
         <meta charset="UTC-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/_navBar.css" />
-        <link rel="stylesheet" href="styles/_footerBar.css" />
         <link rel="stylesheet" href="styles/quote.css" />
+        <link rel="stylesheet" href="styles/_commonStyle.css" />
         <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Public Sans'>
         <title>Get Quote Page</title>
     </head>
@@ -29,7 +28,7 @@
             <section class="quote-container">
                 <form method="POST" action="">
                     <div class="quote-header-container">
-                        <div class="quote-main-title">Get a Quote</div>
+                        <div class="standard-title">Get a Quote</div>
                         <div class="change-price-btn-container">
                             <div class="fine-print-text" id="mobile-fine-print-text">
                                 <small>
@@ -37,7 +36,7 @@
                                     the customer must select a minimum of three trucks for the desired package.
                                 </small>
                             </div>
-                            <button type="button" id="change-price-btn">Get Enterprice Price</button>
+                            <button type="button" id="change-price-btn" class="standard-button">Get Enterprice Price</button>
                         </div>
                     </div>
                     <div class="fine-print-text" id="desktop-fine-print-text">
@@ -88,7 +87,7 @@
                         <div class="manpower-title">
                             <h1>Additional Manpower Assistance</h1>
                         </div>
-                        <button type="button" id="contact-us-btn">Contact Us for Premium Assistance</button>
+                        <button type="button" id="contact-us-btn" class="standard-button">Contact Us for Premium Assistance</button>
                         <div class="manpower-info-container" id="manpower-form">
                             <div class="manpower-info-header">
                                 <h2>Charge: $70 / hour / worker</h2>
@@ -104,7 +103,7 @@
                             <p>Total:</p>
                             <div>
                                 <input id="price-label" type="text" value="$0.00" disabled />
-                                <button type="submit" id="submit-order">Order</button>
+                                <button type="submit" id="submit-order" class="standard-button">Order</button>
                             </div>
                             <small>Mileage fee not included</small>
                         </div>
