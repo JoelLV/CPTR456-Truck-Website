@@ -1,3 +1,7 @@
+/**
+ * @author Joel Lopez Villarreal, Adrian Morales
+ */
+
 const BUTTON_ELEMENTS = document.getElementsByClassName("get-quote-btn")
 
 // Add event listeners for both "Get quote" buttons.

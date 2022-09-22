@@ -1,3 +1,7 @@
+/*
+    Author: Joel Lopez Villarreal, Adrian Morales
+*/
+
 /* Center boxes, decrease font size, and decrease title width for mobile view. */
 @media (max-width: 800px) {
     .about-us-container {

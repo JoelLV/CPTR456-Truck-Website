@@ -1,3 +1,7 @@
+/**
+ * @author Joel Lopez Villarreal, Adrian Morales
+ */
+
 const PRICE_CONVERTER_BTN = document.getElementById("converter-btn")
 
 /**

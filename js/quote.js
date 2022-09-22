@@ -1,3 +1,7 @@
+/**
+ * @author Joel Lopez Villarreal, Adrian Morales
+ */
+
 const PRICE_CONVERTER_BTN      = document.getElementById("change-price-btn")
 const CONTACT_US_BTN           = document.getElementById("contact-us-btn")
 const TRUCK_PACKAGE_CHECKBOXES = document.getElementsByClassName("checkbox-input")
