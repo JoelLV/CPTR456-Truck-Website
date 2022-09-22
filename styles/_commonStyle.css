@@ -1,3 +1,4 @@
+/* CSS Reset */
 html, body {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@ html, body {
     background: #ffffff;
 }
 
+/* Change title size for small screens */
 @media (max-width: 830px) {
     .standard-title {
         width: 100%;
@@ -13,6 +15,7 @@ html, body {
     }
 }
 
+/* Change title size for desktop screens */
 @media (min-width: 830px) {
     .standard-title {
         width: 500px;
@@ -21,13 +24,7 @@ html, body {
     }
 }
 
-
-@media (min-width: 641px) {
-    .standard-footer-bar a {
-        font-size: 18px;
-    }
-}
-
+/* Change font-size of footer for small screens */
 @media (max-width: 640px) {
     .standard-footer-bar a {
         font-size: 14px;
@@ -37,6 +34,10 @@ html, body {
 /* Change font-size and logo size for desktop screens */
 @media (min-width: 641px) {
     .standard-nav-bar a {
+        font-size: 18px;
+    }
+
+    .standard-footer-bar a {
         font-size: 18px;
     }
 
@@ -98,6 +99,7 @@ html, body {
     height: 60px;
 }
 
+/* Must display as column in order for footer to stick to the bottom */
 body {
     display: flex;
     flex-direction: column;
@@ -125,6 +127,7 @@ body {
     text-decoration: none;
 }
 
+/* Standard style for a button */
 .standard-button {
     background: #031329;
     color: #FFFFFF;
@@ -133,6 +136,7 @@ body {
     border: 0;
 }
 
+/* Standard style for a title */
 .standard-title {
     display: flex;
     align-items: center;

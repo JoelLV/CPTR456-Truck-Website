@@ -1,3 +1,4 @@
+/* CSS style for small screens */
 @media (max-width: 830px) {
     section {
         display: flex;
@@ -36,6 +37,7 @@
     }
 }
 
+/* CSS style for desktop screens */
 @media (min-width: 830px) {
     .service-container {
         width: 450px;
@@ -63,6 +65,7 @@
     }
 }
 
+/* CSS styles that do not depend on viewport size */
 section {
     margin: 20px;
 }

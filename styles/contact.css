@@ -1,3 +1,4 @@
+/* CSS styles that do not depend on viewport size */
 .contact {
     display: flex;
     color: #ffffff;
